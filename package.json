@@ -1,0 +1,32 @@
+{
+  "name": "woodenlog",
+  "version": "1.0.0",
+  "description": "Minimalist log node messages module",
+  "main": "index.js",
+  "scripts": {
+	  "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eladelrom/woodenlog.git"
+  },
+  "keywords": [
+    "log",
+    "woodenlog",
+    "log",
+    "messages"
+  ],
+  "author": "Elad (Eli) Elrom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eladelrom/woodenlog/issues"
+  },
+  "homepage": "https://github.com/eladelrom/woodenlog#readme",
+  "dependencies": {
+    "ansi-styles": "^2.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
