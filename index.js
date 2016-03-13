@@ -12,6 +12,10 @@ var logFunction = console.log,
 	warnColor = 'yellow',
 	errorColor = 'red';
 
+var logMessage = function(object, color) {
+	logFunction(style[color].open + object + style[color].close);
+}
+
 module.exports = {
 
 	/**
@@ -20,7 +24,7 @@ module.exports = {
 	 * @param {Object} object
 	 */
 	log: function(object) {
-		logFunction(style[logColor].open + object + style[logColor].close);
+		logMessage(object, logColor);
 		return true;
 	},
 
@@ -30,7 +34,7 @@ module.exports = {
 	 * @param {Object} object
 	 */
 	warn: function(object) {
-		logFunction(style[warnColor].open + object + style[warnColor].close);
+		logMessage(object, warnColor);
 		return true;
 	},
 
@@ -41,7 +45,7 @@ module.exports = {
 	 * @param {Object} object
 	 */
 	error: function(object) {
-		logFunction(style[errorColor].open + object + style[errorColor].close);
+		logMessage(object, errorColor);
 		return true;
 	},
 
